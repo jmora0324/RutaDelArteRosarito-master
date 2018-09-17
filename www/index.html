@@ -89,9 +89,32 @@
     </style>
   </head>
   <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+			<ul class="collapsed-menu">
+				<li><a href="directory.html">Inicio</a></li>
+				<li><a href="historia.html">Historia</a></li>
+				<li><a href="#" class="abre_ruta">Ruta</a></li>				
+				<li><a href="galeria.html">Galería</a></li>
+				<li><a href="artistas.html">Artistas</a></li>
+				<li><a href="contactanos.html">Contáctanos</a></li>				
+			</ul>
+			<p><a class="panel-close" href="#">Close me</a></p>
+			
+        </div>
+		
+	</div>
+	
     <h1>Hello, World!</h1>
+	
     <div id="map_canvas">
-      <button id="button">Click me!</button>
+      <button id="button">Click on me!</button>
     </div>
 	
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
