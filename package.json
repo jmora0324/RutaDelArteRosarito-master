@@ -1,7 +1,7 @@
 {
-  "name": "io.cordova.hellocordova",
+  "name": "com.rosaritoartfest.rutadelarterosarito",
   "version": "1.0.0",
-  "displayName": "HelloCordova",
+  "displayName": "Ruta del Arte Rosarito",
   "cordova": {
     "platforms": [
       "ios",
