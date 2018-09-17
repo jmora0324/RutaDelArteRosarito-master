@@ -1,4 +1,4 @@
-# Hello Google Map
+# Ruta del Arte Rosarito
 
 ## Description
   This is a demo project of [cordova-plugin-googlemaps](https://github.com/mapsplugin/cordova-plugin-googlemaps).
