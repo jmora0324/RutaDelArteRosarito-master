@@ -42,51 +42,6 @@ $$(document).on('deviceready', function() {
     /* var map = new GoogleMap();
     map.initialize();	*/
 	
-      var div = document.getElementById("map_canvas");
-
-      // If your app runs this program on browser,
-      // you need to set `API_KEY_FOR_BROWSER_RELEASE` and `API_KEY_FOR_BROWSER_DEBUG`
-      // before `plugin.google.maps.Map.getMap()`
-      //
-      //   API_KEY_FOR_BROWSER_RELEASE for `https:` protocol
-      //   API_KEY_FOR_BROWSER_DEBUG for `http:` protocol
-      //
-      // If your app does not use browser,
-      // you can comment out this code.
-      plugin.google.maps.environment.setEnv({
-        'API_KEY_FOR_BROWSER_RELEASE': '(YOUR_API_KEY_IS_HERE)',
-        'API_KEY_FOR_BROWSER_DEBUG': ''
-      });
-
-      // Create a Google Maps native view under the map_canvas div.
-      var map = plugin.google.maps.Map.getMap(div);
-
-      // If you click the button, do something...
-      var button = document.getElementById("button");
-      button.addEventListener("click", function() {
-
-        // Move to the position with animation
-        map.animateCamera({
-          target: {lat: 37.422359, lng: -122.084344},
-          zoom: 17,
-          tilt: 60,
-          bearing: 140,
-          duration: 5000
-        });
-
-        // Add a maker
-        var marker = map.addMarker({
-          position: {lat: 37.422359, lng: -122.084344},
-          title: "Welecome to \n" +
-                 "Cordova GoogleMaps plugin for iOS,Android and Browser!",
-          snippet: "This plugin ES INCREíBLE!",
-          animation: plugin.google.maps.Animation.BOUNCE
-        });
-
-        // Show the info window
-        marker.showInfoWindow();
-
-      });
 	
 });
 
@@ -115,13 +70,56 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     myApp.alert('Here comes About page 2');
 })
 
-$$(document).on('pageInit', '.page[data-page="googlemap"]', function (e) {
+$$(document).on('pageInit', '.page[data-page="map"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "googlemap"
     myApp.alert('GoogleMaps page!');
 	
-	/* dos lineas agregadas por mi*/
-    //var map = new GoogleMap(1);
-    //map.initialize();	
+      var div = document.getElementById("map_canvas");
+
+      // If your app runs this program on browser,
+      // you need to set `API_KEY_FOR_BROWSER_RELEASE` and `API_KEY_FOR_BROWSER_DEBUG`
+      // before `plugin.google.maps.Map.getMap()`
+      //
+      //   API_KEY_FOR_BROWSER_RELEASE for `https:` protocol
+      //   API_KEY_FOR_BROWSER_DEBUG for `http:` protocol
+      //
+      // If your app does not use browser,
+      // you can comment out this code.
+      plugin.google.maps.environment.setEnv({
+        'API_KEY_FOR_BROWSER_RELEASE': '(YOUR_API_KEY_IS_HERE)',
+        'API_KEY_FOR_BROWSER_DEBUG': ''
+      });
+
+      // Create a Google Maps native view under the map_canvas div.
+      var map = plugin.google.maps.Map.getMap(div);
+
+      // If you click the button, do something...
+      var button = document.getElementById("button");
+      button.addEventListener("click", function() {
+alert ("sucede!");
+        // Move to the position with animation
+        map.animateCamera({
+          target: {lat: 37.422359, lng: -122.084344},
+          zoom: 17,
+          tilt: 60,
+          bearing: 140,
+          duration: 5000
+        });
+
+        // Add a maker
+        var marker = map.addMarker({
+          position: {lat: 37.422359, lng: -122.084344},
+          title: "Welecome to \n" +
+                 "Cordova GoogleMaps plugin for iOS,Android and Browser!",
+          snippet: "This plugin ES INCREíBLE!",
+          animation: plugin.google.maps.Animation.BOUNCE
+        });
+
+        // Show the info window
+        marker.showInfoWindow();
+
+      });
+	
 	
 })
 
