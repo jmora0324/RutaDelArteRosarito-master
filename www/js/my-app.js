@@ -96,7 +96,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
       // If you click the button, do something...
       var button = document.getElementById("button");
       button.addEventListener("click", function() {
-alert (map.length);
+//alert (map.length);
         // Move to the position with animation
         map.animateCamera({
           target: {lat: 37.422359, lng: -122.084344},
