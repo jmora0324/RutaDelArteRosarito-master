@@ -72,7 +72,7 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 
 $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "googlemap"
-    myApp.alert('GoogleMaps page!');
+    //myApp.alert('GoogleMaps page!');
 	
       var div = document.getElementById("map_canvas");
 
@@ -96,7 +96,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
       // If you click the button, do something...
       var button = document.getElementById("button");
       button.addEventListener("click", function() {
-alert ("sucede!");
+alert (map.length);
         // Move to the position with animation
         map.animateCamera({
           target: {lat: 37.422359, lng: -122.084344},
