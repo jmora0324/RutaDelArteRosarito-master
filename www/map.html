@@ -1,11 +1,12 @@
 <head>   
    <script type="text/javascript">
     //document.addEventListener("deviceready", function() {
-	
+$(document).ready(function(){	
 		alert ("is this happening?");
 		
       var div = document.getElementById("map_canvas");
 
+	  
       // If your app runs this program on browser,
       // you need to set `API_KEY_FOR_BROWSER_RELEASE` and `API_KEY_FOR_BROWSER_DEBUG`
       // before `plugin.google.maps.Map.getMap()`
@@ -26,7 +27,8 @@
       // If you click the button, do something...
       var button = document.getElementById("button");
       button.addEventListener("click", function() {
-
+alert (div.css("height"));
+	  
         // Move to the position with animation
         map.animateCamera({
           target: {lat: 37.422359, lng: -122.084344},
@@ -49,7 +51,7 @@
         marker.showInfoWindow();
 
       });
-
+}
     //}, false);
 
     </script>
