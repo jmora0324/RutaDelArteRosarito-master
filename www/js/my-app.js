@@ -73,7 +73,7 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "googlemap"
     //myApp.alert('GoogleMaps page!');
-	
+	myApp.closePanel();
       var div = document.getElementById("map_canvas");
 
       // If your app runs this program on browser,
