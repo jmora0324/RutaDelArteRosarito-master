@@ -86,7 +86,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
       // If your app does not use browser,
       // you can comment out this code.
       plugin.google.maps.environment.setEnv({
-        'API_KEY_FOR_BROWSER_RELEASE': '(YOUR_API_KEY_IS_HERE)',
+        'API_KEY_FOR_BROWSER_RELEASE': 'AIzaSyBdRVHowh-nEDviOfqPlcyH4Ywqwoorv0w',
         'API_KEY_FOR_BROWSER_DEBUG': ''
       });
 
