@@ -213,7 +213,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 					break;
 */
 				
-		//  }
+		  }
         // Move to the position with animation
         map.animateCamera({
           target: {lat: defLat, lng: defLong},
@@ -234,7 +234,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
         // Show the info window
         marker.showInfoWindow();
 
-      });
+      //});
 	
 	
 })
