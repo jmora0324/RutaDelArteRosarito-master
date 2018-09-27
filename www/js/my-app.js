@@ -73,6 +73,9 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
 $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "googlemap"
     //myApp.alert('GoogleMaps page!');
+	console.log(e.detail);
+	console.log(e.detail.page.fromPage.name);
+	console.log(e.detail.page.query.id);
 	myApp.closePanel();
       var div = document.getElementById("map_canvas");
 
@@ -96,10 +99,124 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
       // If you click the button, do something...
       var button = document.getElementById("button");
       button.addEventListener("click", function() {
-//alert (map.length);
+		  var defLat = 37.422359;
+		  var defLong = -122.084344;
+		  var defName = "Welecome to \nCordova GoogleMaps plugin for iOS,Android and Browser!";
+          var defSnippet: "This plugin IS INCREDIBLE";
+		  
+		  switch (e.detail.page.query.id) {
+				case 2:
+					defLat = 32.360899;
+					defLong = -117.058601;
+					defName = 'Café Galería San Miguel';
+					break;
+				case 5:
+					defLat = 32.341353;
+					defLong = -117.058695;		
+					defName = 'IMAC';
+					break;
+				case 6:
+					defLat = 32.339531;
+					defLong = -117.055624;
+					defName = 'Take and Fake Photo Art Gallery';
+					break;
+				case 7:
+					defLat = 32.335531;
+					defLong = -117.054691;
+					defName = 'Amaya\'s Gallery';
+					break;
+				case 8:
+					defLat = 32.335772;
+					defLong = -117.054829;
+					defName = 'Ugi\'s';
+					break;
+				case 9:
+					defLat = 32.336078;
+					defLong = -117.054436;
+					defName = 'Paco\'s Gallery';
+					break;
+				case 10:
+					defLat = 32.321771;
+					defLong = -117.049465;
+					defName = 'Miguel\'s';
+					break;
+				case 12:
+					defLat = 32.308406;
+					defLong = -117.044457;
+					defName = 'ROHO';
+					break;
+				case 13:
+					defLat = 32.306007;
+					defLong = -117.043817;
+					defName = 'Morales';
+					break;
+				case 15:
+					defLat = 32.303230;
+					defLong = -117.042566;
+					defName = 'Luca Art';
+					break;
+				case 16:
+					defLat = 32.301687;
+					defLong = -117.041769;
+					defName = 'Art & Tango';
+					break;
+				case 19:
+					defLat = 32.287719;
+					defLong = -117.034637;
+					defName = 'Moroga y Arte Mass';
+					break;						
+				case 20:
+					defLat = 32.285577;
+					defLong = -117.033073;
+					defName = 'Klein';
+					break;
+				case 21:
+					defLat = 32.285399;
+					defLong = -117.032975;
+					defName = "Polo's";
+					break;					
+				case 22:
+					defLat = 32.285250;
+					defLong = -117.032977;
+					defName = 'Montecristo';
+					break;
+				case 23:
+					defLat = 32.285018;
+					defLong = -117.032822;
+					defName = 'White Rabbit';
+					break;				
+				case 24:
+					defLat = 32.284842;
+					defLong = -117.032523;
+					defName = 'Art Gallery Popotla';
+					break;					
+				case 25:
+					defLat = 32.268320;
+					defLong = -117.021020;
+					defName = 'Baja Glass Studio';
+					break;
+				case 26:
+					defLat = 32.258574;
+					defLong = -116.972767;
+					defName = 'Glass Gallery Jorge Luna';
+					break;		
+				case 27:
+					defLat = 32.242607;
+					defLong = -116.934731;
+					defName = 'Galería Puerto Nuevo';
+					break;		
+		/*
+				case 3:
+					defLat = 32.350711;
+					defLong = -117.0549779;
+					defName = 'Wearable Art';
+					break;
+*/
+				
+		  }
         // Move to the position with animation
         map.animateCamera({
-          target: {lat: 37.422359, lng: -122.084344},
+          target: {lat: defLat, lng: defLong},
           zoom: 17,
           tilt: 60,
           bearing: 140,
@@ -108,10 +225,9 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 
         // Add a maker
         var marker = map.addMarker({
-          position: {lat: 37.422359, lng: -122.084344},
-          title: "Welecome to \n" +
-                 "Cordova GoogleMaps plugin for iOS,Android and Browser!",
-          snippet: "This plugin ES INCREíBLE!",
+          position: {lat: defLat, lng: defLong},
+          title: defName,
+          snippet: defSnippet,
           animation: plugin.google.maps.Animation.BOUNCE
         });
 
