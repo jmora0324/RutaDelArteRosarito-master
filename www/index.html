@@ -17,11 +17,8 @@
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
      -->
 	 <!-- quite el css de ios y puse el min siguiente -->
-    <!-- <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css"> -->
-	<link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
-	<link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
-	
-    <!-- <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css"> -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+	<link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/framework7-icons.css">	
 	
@@ -79,6 +76,8 @@
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
+			{{#if @global.ios}}
+		
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
@@ -93,6 +92,7 @@
                     </div>
                 </div>
             </div>
+			{{/if}}
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
