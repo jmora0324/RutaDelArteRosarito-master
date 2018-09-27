@@ -102,7 +102,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 		  var defLat = 37.422359;
 		  var defLong = -122.084344;
 		  var defName = "Welecome to \nCordova GoogleMaps plugin for iOS,Android and Browser!";
-          var defSnippet: "This plugin IS INCREDIBLE";
+          var defSnippet= "This plugin IS INCREDIBLE";
 		  
 		  switch (e.detail.page.query.id) {
 				case 2:
