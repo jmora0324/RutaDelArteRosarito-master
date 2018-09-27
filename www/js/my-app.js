@@ -77,6 +77,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 	console.log(e.detail.page.fromPage.name);
 	console.log(e.detail.page.query.id);
 	
+	/*
 	plugin.google.maps.LocationService.getMyLocation(function(result) {
 	  alert(["Your current location:\n",
 		  "latitude:" + location.latLng.lat.toFixed(3),
@@ -85,7 +86,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 		  "time:" + location.time,
 		  "bearing:" + location.bearing].join("\n"));
 	});
-
+*/
 	
 	myApp.closePanel();
       var div = document.getElementById("map_canvas");
