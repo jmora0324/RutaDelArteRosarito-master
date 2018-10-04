@@ -316,3 +316,7 @@ $$('.abre_ruta').on('click', function () {
 	//myApp.alert('Here comes Photo Browser');
     myPhotoBrowser.open();
 });
+
+$$('.panel-close').on('click', function (e) {
+	myApp.closePanel();
+});
