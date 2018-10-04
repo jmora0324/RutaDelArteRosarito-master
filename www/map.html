@@ -1,21 +1,26 @@
-<!-- Top Navbar-->
 
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="left">
-				<a href="#" class="back link">
-					<i class="icon icon-back"></i>
-					<span>Back</span>
-				</a>
-			</div>
-			<div class="center sliding">Map</div>
-			<div class="right">
-				<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-			</div>
-		</div>
-	</div>
-<div class="pages">
+<div class="pages navbar-fixed">
+<!--<div class="pages"> -->
+
 <div data-page="map" class="page">
+			<!-- SECCION MOVIDA A -->
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Mapa</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+			<!-- SECCION MOVIDA A -->
+
+
 	<div class="page-content">
 		<div class="content-block" style="height: inherit;">
 			<div id="map_canvas">
@@ -25,31 +30,5 @@
 	</div>
 </div>
 </div>
-<!-- Top Navbar-->
-<!--
-<div data-page="map" class="page">
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="left">
-				<a href="#" class="back link">
-					<i class="icon icon-back"></i>
-					<span>Back</span>
-				</a>
-			</div>
-			<div class="center sliding">Map</div>
-			<div class="right">
-				<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="page-content">
-		<div class="content-block" style="height: inherit;">
-			<div id="map_canvas">
-			  <button id="button">Click on me!</button>
-			</div>			
-		</div>
-	</div>
-</div>
--->
 
 
