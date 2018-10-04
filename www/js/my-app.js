@@ -308,7 +308,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 /*=== As Page ===*/
 var myPhotoBrowser = myApp.photoBrowser({
     zoom: 400,
-    photos: ['img\rutadelarte_oficial.jpg']
+    photos: ['rutadelarte_oficial.jpg']
 });  
 
 
