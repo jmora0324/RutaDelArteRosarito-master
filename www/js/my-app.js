@@ -321,6 +321,10 @@ $$('.goto_inicio').on('click', function () {
 	window.location = "index.html";
 });
 
+$$('.goto_contacto').on('click', function () {
+	window.location = "contactanos.html";
+});
+
 $$('.panel-close').on('click', function (e) {
 	myApp.closePanel();
 });
