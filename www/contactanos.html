@@ -1,33 +1,62 @@
-<!-- Top Navbar-->
 
-	<div class="navbar">
-		<div class="navbar-inner">
-			<div class="left">
-				<a href="#" class="back link">
-					<i class="icon icon-back"></i>
-					<span>Back</span>
-				</a>
-			</div>
-			<div class="center sliding">Contacto</div>
-			<div class="right">
-				<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-			</div>
-		</div>
-	</div>
-<div class="pages">
+<div class="pages navbar-fixed">
+<!--<div class="pages"> -->
+
 <div data-page="contacto" class="page">
+			<!-- SECCION MOVIDA A -->
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+					<div class="left">
+						<a href="#" class="back link">
+							<i class="icon icon-back"></i>
+							<span>Back</span>
+						</a>
+					</div>				
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <!-- <div class="center sliding">Mapa</div> -->
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+			<!-- SECCION MOVIDA A -->
+
+
 	<div class="page-content">
-		<div class="list simple-list">
-		  <ul>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-		  </ul>
+		<div class="content-block-title">Contáctanos</div>
+		<div class = "list-block">
+			<ul>
+			   <li>
+				  <div class = "item-content">
+					 <div class = "item-media"><i class = "icon icon-form-name"></i></div>
+					 <div class = "item-inner">
+						<div class = "item-input">
+						   <input type = "text" placeholder = "Nombre">
+						</div>
+					 </div>
+				  </div>
+			   </li>
+			   
+			   <li>
+				  <div class = "item-content">
+					 <div class = "item-media"><i class = "icon icon-form-email"></i></div>
+					 <div class = "item-inner">
+						<div class = "item-input">
+						   <input type = "email" placeholder = "Correo electrónico">
+						</div>
+					 </div>
+				  </div>
+			   </li>
+			   
+			   
+			</ul>
 		</div>
+		
 	</div>
 </div>
 </div>
-
-
-
-
