@@ -308,13 +308,17 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 /*=== As Page ===*/
 var myPhotoBrowser = myApp.photoBrowser({
     zoom: 400,
-    photos: ['rutadelarte_oficial.jpg']
+    photos: ['img\rutadelarte_oficial.jpg']
 });  
 
 
 $$('.abre_ruta').on('click', function () {
 	//myApp.alert('Here comes Photo Browser');
     myPhotoBrowser.open();
+});
+
+$$('.goto_inicio').on('click', function () {
+	window.location = "index.html";
 });
 
 $$('.panel-close').on('click', function (e) {
