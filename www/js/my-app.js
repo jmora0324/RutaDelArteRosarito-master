@@ -174,6 +174,10 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 					defLong = -117.058601;
 					defName = 'Café Galería San Miguel';
 					break;
+				case '3':
+					defLat = 32.3547192;
+					defLong =-117.0593652;
+					defName = "Fausto Polanco Gallery";
 				case '5':
 					defLat = 32.341353;
 					defLong = -117.058695;		
