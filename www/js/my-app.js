@@ -326,7 +326,8 @@ $$('.goto_inicio').on('click', function () {
 });
 
 $$('.goto_contacto').on('click', function () {
-	window.location = "contactanos.html";
+	//window.location = "contactanos.html";
+	location.assign("contactanos.html");
 });
 
 $$('.panel-close').on('click', function (e) {
