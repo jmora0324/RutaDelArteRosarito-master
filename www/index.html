@@ -44,7 +44,7 @@
     }
     #map_canvas { /* Must bigger size than 100x100 pixels */
       width: 100%;
-      height: 100%;
+      height: 90%;
     }
     button {
       padding: .5em;
@@ -60,7 +60,14 @@ img.my-lazy {
   width: 100%;
   height: auto;
   display: block;
+  margin-top: 1rem;
 }	
+
+.content-block-title img {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+}
     </style>
   </head>
   <body>
@@ -72,112 +79,80 @@ img.my-lazy {
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-		<!--
-			<ul class="collapsed-menu">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="historia.html">Historia</a></li>
-				<li><a href="ruta.html" class="abre_ruta2">Ruta</a></li>				
-				<li><a href="galeria.html">Galería</a></li>
-				<li><a href="artistas.html">Artistas</a></li>
-				<li><a href="contactanos.html">Contáctanos</a></li>				
-			</ul>
-			<p><a class="panel-close" href="#">Close me</a></p>
-		-->
-		
-		
-					<div class = "list-block">
-                        <ul>
-                           <li class = "item-content">
-                              <div class = "item-media"><i class = "f7-icons size-23">home</i></div>
-                              <div class = "item-inner">
-                                 <div class = "item-title goto_inicio">Inicio</div>
-                                 <div class = "item-after"> <span class = "badge">27</span></div>
-                              </div>
-                           </li>
+			<div class = "list-block">
+				<ul>
+					<li class = "item-content">
+						<div class = "item-media"><i class = "f7-icons size-23">home</i></div>
+						<div class = "item-inner">
+							<div class = "item-title goto_inicio">Inicio</div>
+							<div class = "item-after"> <span class = "badge">25</span></div>
+						</div>
+					</li>
                            
-                           <li class = "item-content">
-                              <div class = "item-media"><i class = "f7-icons size-23">calendar</i></div>
-                              <div class = "item-inner">
-                                 <div class = "item-title">Historia</div>
-                                 <div class = "item-after"></div>
-                              </div>
-                           </li>
+					<li class = "item-content">
+						<div class = "item-media"><i class = "f7-icons size-23">calendar</i></div>
+						<div class = "item-inner">
+							<div class = "item-title">Historia</div>
+							<div class = "item-after"></div>
+						</div>
+					</li>
                            
-                           <li class = "item-content">
-                              <div class = "item-media"><i class = "f7-icons size-23">navigation_fill</i></div>
-                              <div class = "item-inner">
-                                 <div class = "item-title abre_ruta">Ruta</div>
-                                 <div class = "item-after"></div>
-                              </div>
-                           </li>
+					<li class = "item-content">
+						<div class = "item-media"><i class = "f7-icons size-23">navigation_fill</i></div>
+						<div class = "item-inner">
+							<div class = "item-title abre_ruta">Ruta</div>
+							<div class = "item-after"></div>
+						</div>
+					</li>
 						   
-                           <li class = "item-content">
-                              <div class = "item-media"><i class = "icon icon-form-email"></i></div>
-                              <div class = "item-inner">
-                                 <div class = "item-title goto_contacto">Contáctanos</div>
-                                 <div class = "item-after">correo</div>
-                              </div>
-                           </li>
-						   
-						   
-                        </ul>
-                        <div class = "list-block-label">List block label text is written here</div>
-                     </div>		
+					<li class = "item-content">
+						<div class = "item-media"><i class = "icon icon-form-email"></i></div>
+						<div class = "item-inner">
+							<div class = "item-title goto_contacto">Contáctanos</div>
+							<div class = "item-after">correo</div>
+						</div>
+					</li>
+						   	   
+				</ul>
+				<div class = "list-block-label">List block label text is written here</div>
+			</div>		
 		
-        </div>
+		</div>
 		
 	</div>
 	
     <!-- Views -->
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
-		<!-- agregue navbar-fixed a la siguiente linea -->
         <div class="view view-main theme-cyan">
-		<!-- <div class="view view-main ">	-->
 		
-			
-			
-			<!-- le quite las clases de navbar-through y toolbar-through porque quiero hacerlo funcionar para android ahorita solo -->
-            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <!--<div class="pages navbar-through toolbar-through"> -->
 			<div class="pages navbar-fixed">
-			<!--<div class="pages"> -->
-
-			
-			<!-- SECCION MOVIDA A -->
-			<!-- SECCION MOVIDA A -->
-			
 			
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="directory" class="page">
 				
-			<!-- SECCION MOVIDA A -->
-			<!-- de aqui quite la seccion de div class=navbar y la pase a la div class=page -->
-            <!-- Top Navbar-->
-            <div class="navbar">
-                <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Ruta del Arte Rosarito</div>
-                    <div class="right">
-                        <!--
-                          Right link contains only icon - additional "icon-only" class
-                          Additional "open-panel" class tells app to open panel when we click on this link
-                        -->
-                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>
-                </div>
-            </div>
-			<!-- SECCION MOVIDA A -->
-				
+					<!-- Top Navbar-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+							<div class="center sliding">Ruta del Arte Rosarito</div>
+							<div class="right">
+								<!--
+								Right link contains only icon - additional "icon-only" class
+								Additional "open-panel" class tells app to open panel when we click on this link
+								-->
+								<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+							</div>
+						</div>
+					</div>
 				
 				
                     <!-- Scrollable page content -->
                     <div class="page-content">
 
                         <div class="content-block">
-							<!-- <div class="block-title"><h1>Directory</h1></div>-->
 
-							<div class="content-block-title">Directorio</div>
+							<div class="content-block-title" style="padding-top: 0px;"><img src="img/rutadelarte_logo3.png"></div>
 								<div class="list-block accordion-list">
 									<ul>
 										<li class="accordion-item">
@@ -188,10 +163,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juárez 1367C–5240&nbsp;
 														<a href="map.html">
 															<i class="f7-icons size-25">navigation</i>
-														</a> Boulevard Benito Juárez 1367C–5240<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6616169533" class="external"> (661) 616-9533</a>
 														<img data-src="img/amaya.jpg" class="my-lazy lazy">
@@ -208,10 +183,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juarez #139<br/>Across the Street from Ortega Buffet&nbsp;
 														<a href="map.html?id=2">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Benito Juarez #139<br/>Across the Street from Ortega Buffet<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6616121576" class="external"> (661) 612-1576</a>
 													</p>
@@ -228,10 +203,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juárez 426–2400 Rosarito B.C&nbsp;
 														<a href="map.html?id=3">
 															<i class="f7-icons size-25">navigation</i>
-														</a> Boulevard Benito Juárez 426–2400 Rosarito B.C<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6616120125" class="external"> (661) 612-0125</a>
 													</p>
@@ -248,10 +223,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Calle 5  de Mayo #10<br/>Just before the Kontini Bridge&nbsp;
 														<a href="map.html?id=4">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Calle 5  de Mayo #10<br/>Just before the Kontini Bridge<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6861121325" class="external"> (686) 112-1325 (MX)</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
@@ -269,10 +244,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Mar Adriático 101<br/>Parque Abelardo L. Rodríguez<br/>Downton on the Street of Banamex<br/>towards the beach&nbsp;
 														<a href="map.html?id=5">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Mar Adriático 101<br/>Parque Abelardo L. Rodríguez<br/>Downton on the Street of Banamex<br/>towards the beach<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6616123924" class="external"> (661) 612-3924</a>
 													</p>												
@@ -288,10 +263,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juarez #890 across from El Nido&nbsp;
 														<a href="map.html?id=6">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Benito Juarez #890 across from El Nido<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6616125992" class="external"> (661) 612-5992</a>
 													</p>												
@@ -307,10 +282,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center&nbsp;
 														<a href="map.html?id=7">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611280911" class="external"> (661) 128-0911</a>
 													</p>												
@@ -326,10 +301,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center&nbsp;
 														<a href="map.html?id=8">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6618501120" class="external"> (661) 850-1120</a>
 													</p>												
@@ -345,10 +320,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center&nbsp;
 														<a href="map.html?id=9">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Benito Juarez #31<br/>Hotel Rosarito Beach Shopping Center<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611119606" class="external"> (661) 111-9606</a>
 													</p>												
@@ -364,10 +339,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Popotla km 28.5&nbsp;
 														<a href="map.html?id=10">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Popotla km 28.5<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611006090" class="external"> (661) 100-6090</a>
 													</p>												
@@ -383,10 +358,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Primero De Mayo 3200 2 CB 2271<br/>Calle Principal<br/>Magisterial. C.P. 22703<br/>Rosarito BC&nbsp;
 														<a href="map.html?id=11">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Primero De Mayo 3200 2 CB 2271<br/>Calle Principal<br/>Magisterial. C.P. 22703<br/>Rosarito BC<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611030883" class="external"> (661) 103-0883</a>
 													</p>												
@@ -402,10 +377,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Popotla #58 km 30.5&nbsp;
 														<a href="map.html?id=13">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Popotla #58 km 30.5<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611072633" class="external"> (661) 107-2633</a>
 													</p>												
@@ -421,10 +396,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Paseo La Cascada s/n, La Cascada&nbsp;
 														<a href="map.html?id=14">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Paseo La Cascada s/n, La Cascada<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611006271" class="external"> (661) 100-6271</a>
 													</p>												
@@ -440,10 +415,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Popotla Km 30&nbsp;
 														<a href="map.html?id=15">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Popotla Km 30<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611253983" class="external"> (661) 125-3983</a>
 													</p>												
@@ -459,10 +434,10 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Popotla Km 31&nbsp;
 														<a href="map.html?id=16">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Popotla Km 31<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611006179" class="external"> (661) 100-6179</a>
 													</p>												
@@ -478,51 +453,200 @@ img.my-lazy {
 											</a>
 											<div class="accordion-item-content">
 												<div class="content-block">
-													<p>
+													<p>Boulevard Popotla Km 33&nbsp;
 														<a href="map.html?id=18">
 															<i class="f7-icons size-25">navigation</i>
-														</a>Boulevard Popotla Km 33<br/>
+														</a><br/>
 														<i class="f7-icons size-16">phone_fill</i>
 														<a href="tel:6611006179" class="external"> (661) 100-6179</a>
 													</p>												
 												</div>
 											</div>
 										</li>	
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Moroga Fine Art</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33&nbsp;
+														<a href="map.html?id=19">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6611106184" class="external"> (661) 110-6184</a>
+													</p>												
+												</div>
+											</div>
+										</li>	
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Klein Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33<br/>(Across the street from Baja Movie Studios)&nbsp;
+														<a href="map.html?id=20">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6611006645" class="external"> (661) 100-6645</a>
+													</p>												
+												</div>
+											</div>
+										</li>	
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Polo’s Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33<br/>(Across the street from Baja Movie Studios)&nbsp;
+														<a href="map.html?id=21">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6611006645" class="external"> (661) 100-6645</a>
+													</p>												
+												</div>
+											</div>
+										</li>	
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Montecristo Fine Art</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33.5&nbsp;
+														<a href="map.html?id=22">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6611112075" class="external"> (661) 111-2075</a>
+													</p>												
+												</div>
+											</div>
+										</li>										
+										
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">White Rabbit Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33.5<br/>Just before Boulevard 2000&nbsp;
+														<a href="map.html?id=23">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6611006916" class="external"> (661) 100-6916</a>
+													</p>												
+												</div>
+											</div>
+										</li>										
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Art Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Boulevard Popotla Km 33.5&nbsp;
+														<a href="map.html?id=24">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6645014500" class="external"> (664) 501-4500</a>
+													</p>												
+												</div>
+											</div>
+										</li>										
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Baja Glass Studio & Art Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Hotel Calafia Courtyard<br/>Carretera Libre Tijuana-Ensenada Km 35.5&nbsp;
+														<a href="map.html?id=25">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6616146214" class="external"> (661) 614-6214</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:8587367630" class="external"> (858) 736-7630 (US Cell)</a>
+														
+													</p>												
+												</div>
+											</div>
+										</li>										
+										
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Jorge Luna Collections Glass Art</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Carretera Libre Tijuana-Ensenada Km 40<br/>Rancho Santini&nbsp;
+														<a href="map.html?id=26">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6616132065" class="external"> (661) 613-2065</a>
+													</p>												
+												</div>
+											</div>
+										</li>	
+
+										<li class="accordion-item">
+											<a href="#" class="item-content item-link">
+												<div class="item-inner">
+													<div class="item-title">Puerto Nuevo Gallery</div>
+												</div>
+											</a>
+											<div class="accordion-item-content">
+												<div class="content-block">
+													<p>Anzuelo 11, Puerto Nuevo&nbsp;
+														<a href="map.html?id=27">
+															<i class="f7-icons size-25">navigation</i>
+														</a><br/>
+														<i class="f7-icons size-16">phone_fill</i>
+														<a href="tel:6616140419" class="external"> (661) 614-0419</a>
+													</p>												
+												</div>
+											</div>
+										</li>	
 										
 									</ul>
-								</div>
-		  
-
-		  
-							<div class="block">
-
-							  <div class="row">
-								<div class="col-100 tablet-50"><p><span class="gallery-name">19 - Moroga Fine Art</span> <a href="map.html?id=19"><i class="f7-icons size-25">navigation</i></a><br/>Boulevard Popotla Km 33<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6611106184" class="external"> (661) 110-6184</a></p></div>
-								<div class="col-100 tablet-50"><p><span class="gallery-name">20 - Klein Gallery</span> <a href="map.html?id=20"><i class="f7-icons size-25">navigation</i></a><br/>Blvd Popotla Km33<br/>(Across the street from Baja Movie Studios)<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6611006645" class="external"> (661) 100-6645</a></p></div>
-							  </div>
-							  <div class="row">
-								<div class="col-100 tablet-50"><p><span class="gallery-name">21 - Polo’s Gallery</span> <a href="map.html?id=21"><i class="f7-icons size-25">navigation</i></a><br/>Blvd Popotla Km33<br/>(Across the street from Baja Movie Studios)<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6611006645" class="external"> (661) 100-6645</a></p></div>
-								<div class="col-100 tablet-50"><p><span class="gallery-name">22 - Montecristo Fine Art</span> <a href="map.html?id=22"><i class="f7-icons size-25">navigation</i></a><br/>(José González Montecristo)<br/>Boulevard Popotla Km 33.5<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6611112075" class="external"> (661) 111-2075</a></p></div>
-							  </div>
-							  <div class="row">
-								<div class="col-100 tablet-50"><p><span class="gallery-name">23 - White Rabbit Gallery</span> <a href="map.html?id=23"><i class="f7-icons size-25">navigation</i></a><br/>Boulevard Popotla Km 33.5<br/>Just before Boulevard 2000<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6611006916" class="external"> (661) 100-6916</a></p></div>
-								<div class="col-100 tablet-50"><p><span class="gallery-name">24 - Art Gallery</span> <a href="map.html?id=24"><i class="f7-icons size-25">navigation</i></a><br/>Boulevard Popotla Km 33.5<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6645014500" class="external"> (664) 501-4500</a></p></div>
-							  </div>
-							  <div class="row">
-								<div class="col-100 tablet-50"><p><span class="gallery-name">25 - Baja Glass Studio & Art Gallery</span> <a href="map.html?id=25"><i class="f7-icons size-25">navigation</i></a><br/>Lee Manning<br/>Hotel Calafia Courtyard<br/>Carretera Libre Tijuana-Ensenada Km 35.5<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6616146214" class="external"> (661) 614-6214</a><br/><i class="f7-icons size-16">phone_fill</i><a href="tel:8587367630" class="external"> (858) 736-7630 (US Cell)</a></p></div>
-								<div class="col-100 tablet-50"><p><span class="gallery-name">26 - Jorge Luna Collections Glass Art</span> <a href="map.html?id=26"><i class="f7-icons size-25">navigation</i></a><br/>Carretera Libre Tijuana-Ensenada Km 40<br/>Rancho Santini<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6616132065" class="external"> (661) 613-2065</a></p></div>
-							  </div>
-							  <div class="row">
-								<div class="col-100 tablet-50"><p><span class="gallery-name">27 - Puerto Nuevo Gallery</span> <a href="map.html?id=27"><i class="f7-icons size-25">navigation</i></a><br/>Anzuelo 11, Puerto Nuevo<br/><i class="f7-icons size-16">phone_fill</i><a href="tel:6616140419" class="external"> (661) 614-0419</a></p></div>
-							  </div>
-							</div>									
+								</div>								
 							
-                            <!-- Link to another page -->
-                            <a href="about.html">About app</a>
-                        </div>
+								<!-- Link to another page -->
+								<a href="about.html">About app</a>
+						</div>
                     </div>
-                </div>
-            </div>
+				</div>
+			</div>
             <!-- Bottom Toolbar-->
 			<!--
             <div class="toolbar">
@@ -534,9 +658,7 @@ img.my-lazy {
 			-->
         </div>
     </div>
-	
-
-	
+		
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
 	
