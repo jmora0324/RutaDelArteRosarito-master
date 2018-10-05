@@ -311,8 +311,13 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 
 /*=== As Page ===*/
 var myPhotoBrowser = myApp.photoBrowser({
-    zoom: 400,
+  zoom: {
+    enabled: true,
+    maxRatio: 3,
+    minRatio: 1,
+  },
     photos: ['rutadelarte_oficial.jpg']
+	
 });  
 
 
