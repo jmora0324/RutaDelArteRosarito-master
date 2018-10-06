@@ -169,6 +169,13 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
           var defSnippet= "This plugin IS INCREDIBLE";
 		  
 		  switch (e.detail.page.query.id) {
+				case '1':
+				/*
+					defLat = 32.360899;
+					defLong = -117.058601;
+					defName = 'Café Galería San Miguel';
+					*/
+					break;				
 				case '2':
 					defLat = 32.360899;
 					defLong = -117.058601;
@@ -178,6 +185,13 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 					defLat = 32.3547192;
 					defLong =-117.0593652;
 					defName = "Fausto Polanco Gallery";
+					break;
+				case '4':
+					defLat = 32.350711;
+					defLong =-117.0549779;
+					defName = "Cabo Cape / Tire Art";
+					break;
+				
 				case '5':
 					defLat = 32.341353;
 					defLong = -117.058695;		
@@ -218,6 +232,12 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 					defLong = -117.043817;
 					defName = 'Morales';
 					break;
+				case '14':
+					defLat = 32.3043007;
+					defLong = -117.0402503;
+					defName = 'CEART';
+					break;
+				
 				case '15':
 					defLat = 32.303230;
 					defLong = -117.042566;
@@ -228,6 +248,12 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
 					defLong = -117.041769;
 					defName = 'Art & Tango';
 					break;
+				case '18':
+					defLat = 32.2877192;
+					defLong = -117.0346367;
+					defName = 'Arte Mass';
+					break;
+				
 				case '19':
 					defLat = 32.287719;
 					defLong = -117.034637;
