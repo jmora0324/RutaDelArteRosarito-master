@@ -357,13 +357,13 @@ $$('.goto_inicio').on('click', function () {
 });
 
 $$('.goto_historia').on('click', function () {
-	myApp.alert('P R O X I M A M E N T E');
+	myApp.alert('P R O X I M A M E N T E', 'Ruta del Arte');
 });
 
 $$('.goto_contacto').on('click', function () {
 	//window.location = "contactanos.html";
 	//location.assign("contactanos.html");
-	myApp.alert('P R O X I M A M E N T E');
+	myApp.alert('P R O X I M A M E N T E', 'Ruta del Arte');
 });
 
 $$('.panel-close').on('click', function (e) {
