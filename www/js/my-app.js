@@ -314,7 +314,7 @@ $$(document).on('pageInit', '.page[data-page="map"]', function (e) {
           zoom: 17,
           tilt: 60,
           bearing: 140,
-          duration: 5000
+          duration: 3000
         });
 
         // Add a maker
@@ -356,9 +356,14 @@ $$('.goto_inicio').on('click', function () {
 	window.location = "index.html";
 });
 
+$$('.goto_historia').on('click', function () {
+	myApp.alert('P R O X I M A M E N T E');
+});
+
 $$('.goto_contacto').on('click', function () {
 	//window.location = "contactanos.html";
-	location.assign("contactanos.html");
+	//location.assign("contactanos.html");
+	myApp.alert('P R O X I M A M E N T E');
 });
 
 $$('.panel-close').on('click', function (e) {
