@@ -361,9 +361,8 @@ $$('.goto_historia').on('click', function () {
 });
 
 $$('.goto_contacto').on('click', function () {
-	//window.location = "contactanos.html";
-	//location.assign("contactanos.html");
-	myApp.alert('Próximamente disponible', 'Ruta del Arte');
+	window.location = "contactanos.html";
+	//myApp.alert('Próximamente disponible', 'Ruta del Arte');
 });
 
 $$('.panel-close').on('click', function (e) {
