@@ -360,11 +360,12 @@ $$('.goto_historia').on('click', function () {
 	myApp.alert('Próximamente disponible', 'Ruta del Arte');
 });
 
-$$('.goto_contacto').on('click', function () {
-	window.location = "contactanos.html";
-	//myApp.alert('Próximamente disponible', 'Ruta del Arte');
-});
-
 $$('.panel-close').on('click', function (e) {
 	myApp.closePanel();
+});
+
+$$('.form-to-json').on('click', function() {
+	alert ('antes de leer los datos');
+	var formData = myApp.formToJSON('#contact-form');
+	alert(JSON.stringify(formData));
 });
