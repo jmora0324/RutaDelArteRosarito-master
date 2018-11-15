@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="md device-pixel-ratio-1 device-desktop support-position-sticky">
+  <head>
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+	
+    <!-- Your app title -->
+    <title>Ruta del Arte</title>
+
+
+	<link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+	<link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+      		
+		
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/framework7-icons.css">	
+	
+    <script type="text/javascript" src="cordova.js"></script>
+
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main theme-cyan">
+		
+			<div class="pages navbar-fixed">
+			
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="directory" class="page">
+				
+					<!-- Top Navbar-->
+					<div class="navbar">
+						<div class="navbar-inner">
+							<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+							<div class="center sliding">Ruta del Arte Rosarito</div>
+							<div class="right">
+								<!--
+								Right link contains only icon - additional "icon-only" class
+								Additional "open-panel" class tells app to open panel when we click on this link
+								-->
+								<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+							</div>
+						</div>
+					</div>
+				
+				
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+
+                    </div>
+				</div>
+			</div>
+
+        </div>
+    </div>
+		
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+	
+  </body>
+</html>

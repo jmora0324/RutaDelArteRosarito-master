@@ -365,7 +365,16 @@ $$('.panel-close').on('click', function (e) {
 });
 
 $$('.form-to-json').on('click', function() {
-	alert ('antes de leer los datos');
+	//alert ('antes de leer los datos');
+	console.log ("este evento si esta sucediendo");
 	var formData = myApp.formToJSON('#contact-form');
 	alert(JSON.stringify(formData));
+});
+
+$$('form.form-to-json').on('form:success', function (e) {
+  var xhr = e.detail.xhr; // actual XHR object
+ 
+  var data = e.detail.data; // Ajax response from action file
+  // do something with response data
+  console.log (data);
 });
